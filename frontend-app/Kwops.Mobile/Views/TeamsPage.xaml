@@ -12,9 +12,7 @@
         <CollectionView x:Name="ItemsListView"
                         ItemsSource="{Binding Items}"
                         SelectionMode="None">
-
             <CollectionView.ItemTemplate>
-
                 <DataTemplate>
                     <StackLayout Padding="10" x:DataType="model:Team">
                         <Label Text="{Binding Name}"

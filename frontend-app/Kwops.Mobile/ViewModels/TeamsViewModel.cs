@@ -1,10 +1,9 @@
-﻿using Kwops.Mobile.Models;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
+using Kwops.Mobile.Models;
 using Kwops.Mobile.Services;
 using Kwops.Mobile.Services.Backend;
-using Kwops.Mobile.ViewModels;
 
-namespace KWops.Mobile.ViewModels;
+namespace Kwops.Mobile.ViewModels;
 
 public class TeamsViewModel : BaseViewModel
 {
@@ -65,7 +64,7 @@ public class TeamsViewModel : BaseViewModel
             return;
         }
 
-        await _navigationService.NavigateRelativeAsync("TeamDetailPage");
+        await _navigationService.NavigateRelativeAsync("//TeamDetailPage");
         MessagingCenter.Send(this, "TeamSelected", team);
     }
 }

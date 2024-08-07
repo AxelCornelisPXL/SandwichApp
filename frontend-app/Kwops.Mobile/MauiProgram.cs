@@ -7,6 +7,7 @@ using Kwops.Mobile.Settings;
 using Kwops.Mobile.ViewModels;
 using Kwops.Mobile.Views;
 using AppBuilderExtensions = CommunityToolkit.Maui.AppBuilderExtensions;
+using TeamsPage = Kwops.Mobile.Views.TeamsPage;
 
 public static class MauiProgram
 {
@@ -30,9 +31,13 @@ public static class MauiProgram
     {
         // Views
         services.AddTransient<LoginPage>();
+        services.AddTransient<TeamsPage>();
+        services.AddTransient<TeamDetailPage>();
 
         // ViewModels
         services.AddTransient<LoginViewModel>();
+        services.AddTransient<TeamsViewModel>();
+        services.AddTransient<TeamDetailViewModel>();
 
         // Services
         services.AddTransient<IIdentityService, IdentityService>();
@@ -46,5 +51,6 @@ public static class MauiProgram
         //no clue if we need this, but I added it just in case
         services.AddSingleton<IBackendService, BackendService>();
         services.AddSingleton<ITeamsService, TeamsService>();
+
     }
 }
