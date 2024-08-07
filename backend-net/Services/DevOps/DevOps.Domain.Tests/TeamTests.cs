@@ -1,0 +1,62 @@
+﻿using DevOps.Domain.Tests.Builders;
+using Domain;
+using Test;
+
+namespace DevOps.Domain.Tests;
+
+public class TeamTests : TestBase
+{
+    [Test]
+    public void CreateNew_ValidInput_ShouldInitializeFieldsCorrectly()
+    {
+        //Arrange
+        var name = Random.NextString();
+
+        //Act
+        var team = Team.CreateNew(name);
+
+        //Assert
+        Assert.That(team.Id, Is.Not.EqualTo(Guid.Empty));
+        Assert.That(team.Name, Is.EqualTo(name));
+        Assert.That(team.Developers, Is.Not.Null);
+        Assert.That(team.Developers, Has.Count.Zero);
+    }
+
+    [TestCase(null)]
+    [TestCase("")]
+    public void CreateNew_EmptyName_ShouldThrowContractException(string emptyName)
+    {
+        Assert.That(() => Team.CreateNew(emptyName), Throws.InstanceOf<ContractException>());
+    }
+
+    [Test]
+    public void Join_DeveloperNotInTeamYet_ShouldAddDeveloperToTeam()
+    {
+        //Arrange
+        var team = new TeamBuilder().Build();
+        var developer = new DeveloperBuilder().WithoutTeam().Build();
+
+        //Act
+        team.Join(developer);
+
+        //Assert
+        Assert.That(team.Developers, Has.Count.EqualTo(1));
+        Assert.That(team.Developers.First(), Is.SameAs(developer));
+        Assert.That(developer.TeamId, Is.EqualTo(team.Id));
+    }
+
+    [Test]
+    public void Join_DeveloperAlreadyInTeam_ShouldThrowContractException()
+    {
+        //Arrange
+        var teamBuilder = new TeamBuilder();
+        var team = teamBuilder.Build();
+        var developer = new DeveloperBuilder().WithTeam(team).Build();
+        teamBuilder.WithDeveloper(developer);
+        var otherDeveloper = new DeveloperBuilder().WithTeam(team).Build();
+        teamBuilder.WithDeveloper(otherDeveloper);
+
+        //Act + Assert
+        Assert.That(() => team.Join(developer), Throws.InstanceOf<ContractException>());
+    }
+}
