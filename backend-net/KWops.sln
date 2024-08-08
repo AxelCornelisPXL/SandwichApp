@@ -35,27 +35,37 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "BuildingBlocks\Api\A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{F78D6C64-2B65-4973-824D-2CBF2E896CD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationEvens", "IntegrationEvents\IntegrationEvens\IntegrationEvens.csproj", "{F8A1BEE4-B38E-48D1-8CAD-78BD87211B96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationEvens", "IntegrationEvents\IntegrationEvens\IntegrationEvens.csproj", "{F8A1BEE4-B38E-48D1-8CAD-78BD87211B96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResources.AppLogic.Tests", "Services\HumanResources\HumanResources.AppLogic.Tests\HumanResources.AppLogic.Tests.csproj", "{98C89C22-37ED-45AE-B511-D429E6A1C5A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HumanResources.AppLogic.Tests", "Services\HumanResources\HumanResources.AppLogic.Tests\HumanResources.AppLogic.Tests.csproj", "{98C89C22-37ED-45AE-B511-D429E6A1C5A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResources.Domain.Tests", "Services\HumanResources\HumanResources.Domain.Tests\HumanResources.Domain.Tests.csproj", "{75C762D2-07AC-437D-B9DC-46A30349E010}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HumanResources.Domain.Tests", "Services\HumanResources\HumanResources.Domain.Tests\HumanResources.Domain.Tests.csproj", "{75C762D2-07AC-437D-B9DC-46A30349E010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOps.Api.Tests", "Services\DevOps\DevOps.Api.Tests\DevOps.Api.Tests.csproj", "{F8835960-37E3-44DA-87A3-DB55E1B5CA5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevOps.Api.Tests", "Services\DevOps\DevOps.Api.Tests\DevOps.Api.Tests.csproj", "{F8835960-37E3-44DA-87A3-DB55E1B5CA5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOps.AppLogic.Tests", "Services\DevOps\DevOps.AppLogic.Tests\DevOps.AppLogic.Tests.csproj", "{20E9A235-A3AC-4B86-A8A2-36CEDC0A07EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevOps.AppLogic.Tests", "Services\DevOps\DevOps.AppLogic.Tests\DevOps.AppLogic.Tests.csproj", "{20E9A235-A3AC-4B86-A8A2-36CEDC0A07EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevOps.Domain.Tests", "Services\DevOps\DevOps.Domain.Tests\DevOps.Domain.Tests.csproj", "{6138F2E8-CAF2-4322-9866-00B6DBED156D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevOps.Domain.Tests", "Services\DevOps\DevOps.Domain.Tests\DevOps.Domain.Tests.csproj", "{6138F2E8-CAF2-4322-9866-00B6DBED156D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "BuildingBlocks\Test\Test.csproj", "{F1178A70-FD2D-4B4B-BB1C-9A7E445A5875}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "BuildingBlocks\Test\Test.csproj", "{F1178A70-FD2D-4B4B-BB1C-9A7E445A5875}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{203AE972-3911-4446-B00D-D2AAF0D9F3A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.UI", "Services\Identity\Identity.UI\Identity.UI.csproj", "{8982E806-D43B-4EDE-97B3-9B2C8C292648}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.UI", "Services\Identity\Identity.UI\Identity.UI.csproj", "{8982E806-D43B-4EDE-97B3-9B2C8C292648}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{CF80E627-3186-4D00-BE20-FAD2B96A123C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KWops.Cli", "Clients\KWops.Cli\KWops.Cli.csproj", "{33090C8F-2CA9-4C9D-9B4C-A1C910ADB582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KWops.Cli", "Clients\KWops.Cli\KWops.Cli.csproj", "{33090C8F-2CA9-4C9D-9B4C-A1C910ADB582}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wallet", "Wallet", "{A8612D6C-6018-4680-9BBF-E671C18318C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wallet.Infrastructure", "Services\Wallet\Wallet.Infrastructure\Wallet.Infrastructure.csproj", "{4F6E7E02-D2D4-42C9-A227-E2CB0FEB9DC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wallet.Domain", "Services\Wallet\Wallet.Domain\Wallet.Domain.csproj", "{ECB474B6-7DE9-40C5-8A27-2CEF48483A09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wallet.AppLogic", "Services\Wallet\Wallet.AppLogic\Wallet.AppLogic.csproj", "{E2BBBEFD-DA33-46E0-9B1A-5568CE7EE167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wallet.Api", "Services\Wallet\Wallet.Api\Wallet.Api.csproj", "{2C466586-8635-43C1-9A7B-564A95A6A856}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +153,22 @@ Global
 		{33090C8F-2CA9-4C9D-9B4C-A1C910ADB582}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33090C8F-2CA9-4C9D-9B4C-A1C910ADB582}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33090C8F-2CA9-4C9D-9B4C-A1C910ADB582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F6E7E02-D2D4-42C9-A227-E2CB0FEB9DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6E7E02-D2D4-42C9-A227-E2CB0FEB9DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6E7E02-D2D4-42C9-A227-E2CB0FEB9DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6E7E02-D2D4-42C9-A227-E2CB0FEB9DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB474B6-7DE9-40C5-8A27-2CEF48483A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB474B6-7DE9-40C5-8A27-2CEF48483A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB474B6-7DE9-40C5-8A27-2CEF48483A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB474B6-7DE9-40C5-8A27-2CEF48483A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2BBBEFD-DA33-46E0-9B1A-5568CE7EE167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2BBBEFD-DA33-46E0-9B1A-5568CE7EE167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2BBBEFD-DA33-46E0-9B1A-5568CE7EE167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2BBBEFD-DA33-46E0-9B1A-5568CE7EE167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C466586-8635-43C1-9A7B-564A95A6A856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C466586-8635-43C1-9A7B-564A95A6A856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C466586-8635-43C1-9A7B-564A95A6A856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C466586-8635-43C1-9A7B-564A95A6A856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -170,6 +196,11 @@ Global
 		{203AE972-3911-4446-B00D-D2AAF0D9F3A7} = {9A7625B1-934D-4CDC-A331-4FB4D27F0F5A}
 		{8982E806-D43B-4EDE-97B3-9B2C8C292648} = {203AE972-3911-4446-B00D-D2AAF0D9F3A7}
 		{33090C8F-2CA9-4C9D-9B4C-A1C910ADB582} = {CF80E627-3186-4D00-BE20-FAD2B96A123C}
+		{A8612D6C-6018-4680-9BBF-E671C18318C4} = {9A7625B1-934D-4CDC-A331-4FB4D27F0F5A}
+		{4F6E7E02-D2D4-42C9-A227-E2CB0FEB9DC5} = {A8612D6C-6018-4680-9BBF-E671C18318C4}
+		{ECB474B6-7DE9-40C5-8A27-2CEF48483A09} = {A8612D6C-6018-4680-9BBF-E671C18318C4}
+		{E2BBBEFD-DA33-46E0-9B1A-5568CE7EE167} = {A8612D6C-6018-4680-9BBF-E671C18318C4}
+		{2C466586-8635-43C1-9A7B-564A95A6A856} = {A8612D6C-6018-4680-9BBF-E671C18318C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F0D749A2-0385-4510-A731-357CE0D628BF}
